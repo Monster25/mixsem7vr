@@ -28,7 +28,9 @@ public class GrabBall : MonoBehaviour
                 actualBallCollider = ballCollisionList[0];
                 actualBallCollider.gameObject.GetComponent<Rigidbody>().isKinematic = true;
                 actualBallCollider.gameObject.transform.parent.gameObject.transform.parent = gameObject.transform;
+                Debug.Log("Cacat");
             }
+            Debug.Log("Pisat");
         }
         //Release button to let go
         if (Input.GetButtonUp("Fire2"))
